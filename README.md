@@ -14,11 +14,14 @@ A smart campus food booking platform designed to reduce canteen queues and conne
 
 ## 📸 Demo Screenshots
 
-| Student Login | Today's Menu |
-| :--- | :--- |
-| ![Login](https://github.com/arathyvinod/QuickQ/raw/main/assets/login.png) | ![Menu](https://github.com/arathyvinod/QuickQ/raw/main/assets/menu.png) |
+| Student Login |<img width="1515" height="866" alt="login png" src="https://github.com/user-attachments/assets/309eface-19a4-4f6f-985a-ba038d2f1514" />
 
-| Payment & Slot Selection | Canteen Admin Panel |
+Today's Menu |<img width="1905" height="986" alt="menu png" src="https://github.com/user-attachments/assets/a5badcbd-741c-4672-ba23-b3c1c10b7655" />
+
+
+| Payment & Slot Sel<img width="596" height="813" alt="payment png" src="https://github.com/user-attachments/assets/075ee848-ba2a-48b9-b306-4671dda2998b" />
+ection | Canteen A<img width="1434" height="919" alt="admin png" src="https://github.com/user-attachments/assets/712332b3-36f2-4539-827d-59e14bab0c35" />
+dmin Panel |
 | :--- | :--- |
 | ![Payment](https://github.com/arathyvinod/QuickQ/raw/main/assets/payment.png) | ![Admin](https://github.com/arathyvinod/QuickQ/raw/main/assets/admin.png) |
 
