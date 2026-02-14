@@ -1,59 +1,57 @@
-# 🍱 QuickQ – Smart Canteen Management System
+# 🍱 QuickQ – Smart Canteen Management Website
 
-A smart campus food booking system that reduces canteen queues and connects students with nearby restaurants for pre-orders. By integrating real-time slot management and digital receipts, QuickQ ensures a seamless dining experience for students and staff.
+A smart campus food booking platform designed to reduce canteen queues and connect students with nearby restaurants for pre-orders. This web-based system allows students to browse menus, book pickup slots, and receive digital receipts—all through their browser.
 
 ---
 
-## 🌐 Live Demo (Cloud Deployment)
+## 🌐 Project Access
 
 > 🚀 **Backend API Documentation:** [https://quickq-production.up.railway.app/docs](https://quickq-production.up.railway.app/docs)
 > 
-> 🔐 **Admin Access:** The Canteen Admin Panel is restricted to authorized staff for live menu management and occupancy monitoring.
+> 💻 **Local Development URL:** `http://127.0.0.1:5500` (Frontend) | `http://127.0.0.1:8000` (Backend)
 
 ---
 
 ## 📸 Demo Screenshots
 
-| Student Authentication | Today's Menu & Pricing |
+| Student Login | Today's Menu |
 | :--- | :--- |
-| ![Login](./assets/login.png) | ![Menu](./assets/menu.png) |
+| ![Login](https://github.com/arathyvinod/QuickQ/raw/main/assets/login.png) | ![Menu](https://github.com/arathyvinod/QuickQ/raw/main/assets/menu.png) |
 
-| Payment & Slot Selection | Canteen Admin Dashboard |
+| Payment & Slot Selection | Canteen Admin Panel |
 | :--- | :--- |
-| ![Payment](./assets/payment.png) | ![Admin](./assets/admin.png) |
+| ![Payment](https://github.com/arathyvinod/QuickQ/raw/main/assets/payment.png) | ![Admin](https://github.com/arathyvinod/QuickQ/raw/main/assets/admin.png) |
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-* 🔍 **Real-time Slot Occupancy:** Dynamically monitors and restricts bookings to a maximum of 20 persons per time slot to prevent overcrowding.
-* 💳 **Automated Billing Logic:** Automatically calculates a platform service fee (₹5) on top of the base food price.
-* 🎟️ **QR-Based Confirmation:** Generates unique digital receipts with "PAID" status for instant counter verification.
-* 🍴 **Dynamic Menu Management:** Full CRUD (Create, Read, Update, Delete) capabilities for admins to manage daily items and availability.
-* 📱 **Responsive UI:** A smooth, mobile-friendly interface built for students to book meals on the go.
+* 🔍 **Real-time Slot Tracking:** The website dynamically monitors pickup windows to ensure no more than 20 people arrive at the same time.
+* 💳 **Smart Billing:** Integrated pricing logic that calculates the base meal cost plus a ₹5 service fee.
+* 🎟️ **QR-Based Verification:** After booking, the website generates a unique digital receipt for the student to show at the counter.
+* 🍴 **Live Menu Control:** A dedicated admin interface for canteen staff to add or remove food items instantly.
+* 🌐 **Fully Responsive:** Designed to work perfectly on both mobile phone browsers and desktop computers.
 
 ---
 
-## 🧠 Technologies Used
+## 🧠 Tech Stack
 
-* **React.js:** Component-driven frontend for a fast, modern user experience.
-* **FastAPI (Python):** High-performance asynchronous backend API with Swagger docs.
-* **MongoDB Atlas:** Scalable NoSQL cloud database for menu and booking storage.
-* **Motor & Pydantic:** For asynchronous database operations and robust data validation.
-* **QRCode.js:** Secure client-side generation of verifiable digital receipts.
-* **Tailwind CSS:** Modern utility-first styling for a professional UI.
-* **Railway.app:** Cloud infrastructure for seamless deployment and hosting.
+* **Frontend:** HTML5, CSS3, JavaScript, Tailwind CSS.
+* **Backend:** FastAPI (Python) for high-speed asynchronous API handling.
+* **Database:** MongoDB Atlas (NoSQL) for flexible data storage.
+* **Drivers:** Motor (Async MongoDB) and Pydantic for data validation.
+* **Deployment:** Railway.app for cloud hosting.
 
 ---
 
 ## 🛠️ Installation & Setup
 
-### 1. Backend (FastAPI)
+### 1. Backend Setup
 ```bash
 # Navigate to backend directory
 cd backend
 
-# Install dependencies (requires motor, python-dotenv, etc.)
+# Install dependencies
 pip install -r requirements.txt
 
 # Run the server
