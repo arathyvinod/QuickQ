@@ -53,4 +53,7 @@ async def get_slot_status():
 async def test_db(name: str):
     collection = get_collection("test_connection")
     result = await collection.insert_one({"user": name, "message": "Backend-to-Cloud Connection verified!"})
-    return {"status": "Success", "mongo_id": str(result.inserted_id)}
+    return {"status": "Success", "mongo_id": str(result.inserted_id)
+        }
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
