@@ -1,0 +1,12 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Ignore local environment variables (Passwords)
+.env
+
+# Ignore Python cache and virtual environment
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+
+# Ignore system files
+.DS_Store
