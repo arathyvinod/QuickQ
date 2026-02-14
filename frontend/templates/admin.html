@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickQ | Admin Dashboard</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body style="background: #f1f5f9; padding: 20px;">
+
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h1 style="color: #1e293b; text-align: center;">Canteen Admin Panel</h1>
+        
+        <div class="admin-card" style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h3>📊 Live Slot Occupancy (Max 20)</h3>
+            <div id="slot-monitor" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px;">
+                </div>
+        </div>
+
+        <div class="admin-card" style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h3>➕ Add New Item</h3>
+            <form id="addFoodForm" style="display: flex; gap: 10px; margin-top: 15px;">
+                <input type="text" id="foodName" placeholder="Name" required style="flex: 2; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                <input type="number" id="foodPrice" placeholder="Price" required style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                <input type="text" id="foodDesc" placeholder="Description" required style="flex: 2; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                <button type="submit" class="btn-primary" style="flex: 1;">Add</button>
+            </form>
+        </div>
+
+        <div class="admin-card" style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h3>🍴 Current Menu</h3>
+            <div id="admin-menu-list" style="margin-top: 15px;">
+                </div>
+        </div>
+    </div>
+
+    <script src="../static/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn-login {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: white;
+    margin-top: 40px;
+}
+/* Login Box */
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}    /* --- Menu Grid Specifics --- */
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Reusing your feature-card style for food items */
+.food-card {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.food-card h3 {
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.food-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #10b981; /* Matching your green primary button */
+    margin-bottom: 15px;
+}
+
+/* --- Booking Modal --- */
+.modal {
+    display: none; /* Hidden by default; JavaScript will show it */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Dim the background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-content h3 {
+    margin-bottom: 15px;
+}
+
+.modal-content input, 
+.modal-content select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}

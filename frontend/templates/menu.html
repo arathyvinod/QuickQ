@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickQ | Menu & Payment</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">QuickQ</div>
+        <div id="userGreeting" style="font-weight: bold; color: #3b82f6;"></div>
+    </nav>
+
+    <section class="section-header" style="text-align: center; padding: 40px 20px;">
+        <h1>Today's Menu</h1>
+        <p>Order your favorite meal with a small service fee of ₹5.</p>
+    </section>
+
+    <div id="menu-grid" class="menu-grid" style="padding: 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px;">
+        <p style="text-align: center; width: 100%;">Loading delicious food...</p>
+    </div>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content" style="max-width: 450px;">
+            
+            <div id="bookingFormArea">
+                <h3 style="text-align: center; margin-bottom: 15px;">Confirm & Pay</h3>
+                
+                <div id="billBreakdown" style="background: #f8fafc; padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="userSlot" style="font-weight: 600; display: block; margin-bottom: 5px;">Pick a Pickup Time:</label>
+                    <select id="userSlot" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ddd;">
+                        <option value="morning">Morning (9:00 - 11:00)</option>
+                        <option value="afternoon">Afternoon (12:00 - 2:00)</option>
+                        <option value="evening">Evening (4:00 - 6:00)</option>
+                    </select>
+                </div>
+
+                <div class="modal-buttons" style="display: flex; flex-direction: column; gap: 10px;">
+                    <button id="payBtn" onclick="submitBooking()" class="btn-primary" style="width: 100%; padding: 12px;">
+                        Pay Now & Confirm
+                    </button>
+                    <button onclick="closeModal()" class="btn-secondary" style="width: 100%; background: none; border: 1px solid #ddd;">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+
+            <div id="successArea" style="display: none; text-align: center;">
+                <div style="font-size: 50px; margin-bottom: 10px;">💰</div>
+                <h3 style="color: #10b981; margin-bottom: 5px;">Payment Successful!</h3>
+                <p style="font-size: 0.9rem; color: #64748b;">Your booking is confirmed and payment is verified.</p>
+                
+                <div id="qrcode" style="display: flex; justify-content: center; margin: 20px 0;"></div>
+                
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <button onclick="downloadQR()" class="btn-secondary" style="background-color: #f1f5f9; width: 100%;">
+                        📥 Download Digital Receipt (QR)
+                    </button>
+                    <button onclick="window.location.reload()" class="btn-primary" style="width: 100%;">Done</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
